@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- contact17:44 GMT -->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Realtime Automated Car Parking Detection</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+		<link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/ionicons.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/flaticon.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/animate.css" type="text/css" rel="stylesheet">
+		<link href="../static/css/jquery-ui.min.css" type="text/css" rel="stylesheet">
+
+
+		<!--Main Slider-->
+		<link href="../static/css/settings.css" type="text/css" rel="stylesheet" media="screen">
+		<link href="../static/css/layers.css" type="text/css" rel="stylesheet" media="screen">
+
+		<link href="../static/css/style.css" type="text/css" rel="stylesheet">
+		<link href="../static/css/header.css" type="text/css" rel="stylesheet">
+		<link href="../static/css/footer.css" type="text/css" rel="stylesheet">
+		<link href="../static/css/theme-color/default.css" rel="stylesheet" type="text/css" id="theme-color" />
+
+	</head>
+	<body>
+
+		<!-- header Start -->
+	<header id="header" class="header">
+
+			<div class="nav-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="logo">
+								<a href="/"><img src="#" alt=""><b style="font-size: 16px;">Automated Car Parking Detection</b></a>
+							</div>
+							<!-- Phone Menu button -->
+							<button id="menu" class="menu hidden-md-up"></button>
+						</div>
+						<div class="col-md-9 nav-bg d-flex align-items-center">
+							<nav class="navigation">
+								<ul>
+									<li>
+										<a href="/">Home</a>
+									</li>
+									<li>
+										<a href="/about">About</a>
+									</li>
+										<li>
+										<a href="javascript:avoid(0);">blog</a><i class="ion-ios-plus-empty hidden-md-up"></i>
+										<ul class="sub-nav">
+											<li>
+												<a href="https://www.reliancegeneral.co.in/Insurance/Knowledge-Center/Blogs/How-to-Find-the-Right-Spot-for-your-Car-Parking.aspx">Finding right parking spot</a>
+											</li>
+											<li>
+												<a href="https://blog.getmyparking.com/2018/07/04/a-guide-on-different-car-parking-techniques/">Different car parking techniques</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="/contact">Contact</a>
+									</li>
+									<li>
+										<a href="/dashboard">Dashboard</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--Header End-->
+
+	<!-- Intro Section -->
+	<section class="inner-intro bg-img light-color overlay-before parallax-background">
+		<div class="container">
+			<div class="row title">
+				<div class="title_row">
+					<h1 data-title="About"><span>Contact</span></h1>
+					<div class="page-breadcrumb">
+						<a>Home</a>/ <span>Contact Us</span>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Intro Section End-->
+
+
+<br>
+    <!-- Map Section -->
+	<div class="container">
+		<div class="row">
+		  <div class="col-lg-8 col-md-10 mx-auto">
+			<p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+			<!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+			<!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+			<!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+			<form name="sentMessage" id="contactForm" action = "/contact" method="post" novalidate>
+			  <div class="control-group">
+				<div class="form-group floating-label-form-group controls">
+				  <label>Name</label>
+				  <input type="text" class="form-control" placeholder="Name" id="name" name='name' required data-validation-required-message="Please enter your name.">
+					 <p class="help-block text-danger"></p>
+				</div>
+			  </div>
+			  <div class="control-group">
+				<div class="form-group floating-label-form-group controls">
+				  <label>Email Address</label>
+				  <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+				  <p class="help-block text-danger"></p>
+				</div>
+			  </div>
+			  <div class="control-group">
+				<div class="form-group col-xs-12 floating-label-form-group controls">
+				  <label>Phone Number</label>
+					<input type="tel" class="form-control" placeholder="Phone Number" name="phone" id="phone" required data-validation-required-message="Please enter your phone number.">
+				  <p class="help-block text-danger"></p>
+				</div>
+			  </div>
+			  <div class="control-group">
+				<div class="form-group floating-label-form-group controls">
+				  <label>Message</label>
+				  <textarea rows="5" class="form-control" placeholder="Message" name = "message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+				  <p class="help-block text-danger"></p>
+				</div>
+			  </div>
+			  <br>
+			  <div id="success"></div>
+			  <div class="form-group">
+				<button type="submit" class="btn btn-warning" id="sendMessageButton">Send</button>
+			  </div>
+			</form>
+		  </div>
+		</div>
+	  </div>
+  <!-- Contact Section -->
+		<!-- FOOTER -->
+		<footer class="footer pt-80 pt-xs-60">
+			<div class="container">
+				<!--Footer Info -->
+				<div class="row footer-info mb-60">
+					<div class="col-lg-3 col-md-4 col-xs-12 mb-sm-30">
+						<h4 class="mb-30">CONTACT Us</h4>
+						<ul class="link-small">
+							<li>
+								<a href="mailto:mihirkudale1197@gmail.com"><i class="ion-ios-email fa-icons"></i>mihirkudale1197@gmail.com</a>
+							</li>
+						</ul>
+						<address>
+							<i class="ion-ios-location fa-icons"></i>Pune, Maharashtra, India<br><br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.0344739699!2d73.86296739999999!3d18.52461645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1661520532961!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</address>
+					</div>
+					<div class="col-lg-2 col-md-3 col-xs-12 mb-sm-30">
+						<h4 class="mb-30">Links</h4>
+						<ul class="link blog-link">
+							<li>
+								<a href="/"><i class="fa fa-angle-double-right"></i> Home</a>
+							</li>
+							<li>
+								<a href="/about"><i class="fa fa-angle-double-right"></i> About</a>
+							</li>
+							<li>
+								<a href="/contact"><i class="fa fa-angle-double-right"></i> Contact</a>
+							</li>
+							<li>
+								<a href="/dashboard"><i class="fa fa-angle-double-right"></i> Dashboard</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-5 col-xs-12 mb-sm-30">
+						<h4 class="mb-30">Latest Blog</h4>
+						<div class="widget-details link">
+							<div class="post-type-post media">
+								<div class="entry-thumbnail media-left">
+									<img src="../static/images/blog/small-img.jpg" alt="Image">
+								</div>
+								<!-- /.entry-thumbnail -->
+								<div class="post-content media-body">
+									<p class="entry-title">
+										<a href="https://www.reliancegeneral.co.in/Insurance/Knowledge-Center/Blogs/How-to-Find-the-Right-Spot-for-your-Car-Parking.aspx">How to Find the Right Spot for your Car Parking?</a>
+									</p>
+									<div class="post-meta">
+										<time datetime="2022-08-7">
+											7 August, 2022
+										</time>
+									</div>
+									<!-- /.post-meta -->
+								</div>
+								<!-- /.post-content -->
+							</div>
+							<div class="post-type-post media">
+								<div class="entry-thumbnail media-left">
+									<img src="../static/images/blog/small-img1.png" alt="Image">
+								</div>
+								<!-- /.entry-thumbnail -->
+								<div class="post-content media-body">
+									<p class="entry-title">
+										<a href="https://blog.getmyparking.com/2018/07/04/a-guide-on-different-car-parking-techniques/">A Guide on Different Car Parking Techniques</a>
+									</p>
+									<div class="post-meta">
+										On
+										<time datetime="2022-08-7">
+											7 August, 2022
+										</time>
+									</div>
+									<!-- /.post-meta -->
+								</div>
+								<!-- /.post-content -->
+									</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-xs-12 mt-sm-30 mt-xs-15">
+							<div class="icons-hover-black">
+							<h4 class="mb-30">Follow Us</h4>
+							<a href="https://github.com/mihirkudale"> <i class="fa fa-github"></i> </a> <a href="https://www.linkedin.com/in/mihir-kudale-90091082/"> <i class="fa fa-linkedin"></i> </a>
+						</div>
+					</div>
+				</div>
+					<!-- End Footer Info -->
+			</div>
+
+		</footer>
+		<!-- END FOOTER -->
+
+		<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+		<script src="../static/js/jquery-ui.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../static/js/tether.min.js"></script>
+		<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../static/js/owl.carousel.js"></script>
+		<script type="text/javascript" src="../static/js/wow.min.js"></script>
+							<!-- masonry,isotope Effect Js -->
+		<script src="../static/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+		<script src="../static/js/isotope.pkgd.min.js" type="text/javascript"></script>
+		<script src="../static/js/masonry.pkgd.min.js" type="text/javascript"></script>
+		<script src="../static/js/jquery.appear.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../../../../maps.google.com/maps/api/jse8d0?sensor=false&amp;.js"></script>
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="../static/js/jquery.appear.js" type="text/javascript"></script>
+		<script src="../static/js/custom.js" type="text/javascript"></script>
+
+	</body>
+
+<!-- contact17:44 GMT -->
+</html>
