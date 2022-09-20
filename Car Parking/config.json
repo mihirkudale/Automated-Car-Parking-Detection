@@ -1,0 +1,12 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:root@localhost/carpark",
+    "prod_uri":"mysql://root:root@localhost/carpark",
+    "gmail-user":"testmyproject94@gmail.com",
+    "gmail-password":"osarexjxkxgtnzfh",
+    "admin_user":"mihir",
+    "admin_password": "mihir123"
+  }
+}
